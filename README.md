@@ -1,11 +1,10 @@
 #SeedDMS
 
 Comandos utilizados SSH:
-$ git clone https://github.com/mclitos/seeddms
 
-$ cd seeddms
-
-$ docker compose up -d
+git clone https://github.com/mclitos/seeddms
+cd seeddms
+docker compose up -d
 
 
 
