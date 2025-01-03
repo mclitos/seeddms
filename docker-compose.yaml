@@ -1,0 +1,16 @@
+services:
+
+    seeddms:
+        image: usteinm/seeddms:latest    
+        container_name: seeddms
+        restart: unless-stopped            
+        ports:
+            - "8200:80"  # Habilitar o Cambiar el Puerto a uno disponible 
+        environment:
+            - TZ=America/Costa_Rica            
+        volumes:
+            - seeddms-data:/var/lib/seeddms/data
+            - seeddms-conf:/var/lib/seeddms/conf
+volumes:
+    seeddms-data:
+    seeddms-conf:
